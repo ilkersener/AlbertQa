@@ -63,7 +63,7 @@ public class TestPage extends BaseTest {
 
         WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement Nuts_condition_check = wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath
-                ("//*[@id=\"root\"]/div/div/div/div[3]/div/table/tbody/tr[3]/td[2]")));
+                ("//*[@id=\"root\"]/div/div/div/div[3]/div/table/tbody/tr[3]/td[3]")));
         assertEquals("Frozen", Nuts_condition_check.getText(), "Invalid condition for product");
     }
 
@@ -80,7 +80,7 @@ public class TestPage extends BaseTest {
 
         WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement Strawberry_condition_check = wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath
-                ("//*[@id=\"root\"]/div/div/div/div[3]/div/table/tbody/tr[3]/td[2]")));
-        assertEquals("Frozen", Strawberry_condition_check.getText(), "Invalid condition for product");
+                ("//*[@id=\"root\"]/div/div/div/div[3]/div/table/tbody/tr[3]/td[4]")));
+        assertEquals("Fresh", Strawberry_condition_check.getText(), "Invalid condition for product");
     }
 }
