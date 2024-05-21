@@ -42,12 +42,12 @@ public class TestPage extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement Orange_price = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath
                 ("//*[@id='root']/div/div/div/div[3]/div/table/tbody/tr[1]/td[2]")));
-        assertEquals("$2.99", Orange_price.getText(), "Invalid price for product 2");
+        assertEquals("$2.99", Orange_price.getText(), "Invalid price for product");
 
         WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement Orange_condition_check = wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath
                 ("//*[@id=\"root\"]/div/div/div/div[3]/div/table/tbody/tr[3]/td[2]")));
-        assertEquals("Frozen", Orange_condition_check.getText(), "Invalid colour for product 2");
+        assertEquals("Frozen", Orange_condition_check.getText(), "Invalid condition for product");
     }
 
     // Nuts button'a tıklanıyor ve fiyat ile durum kontrol ediliyor.
@@ -59,12 +59,12 @@ public class TestPage extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement Nuts_price = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath
                 ("//*[@id='root']/div/div/div/div[3]/div/table/tbody/tr[1]/td[3]")));
-        assertEquals("$1.00", Nuts_price.getText(), "Invalid price for product 3");
+        assertEquals("$1.00", Nuts_price.getText(), "Invalid price for product");
 
         WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement Nuts_condition_check = wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath
                 ("//*[@id=\"root\"]/div/div/div/div[3]/div/table/tbody/tr[3]/td[2]")));
-        assertEquals("Frozen", Nuts_condition_check.getText(), "Invalid colour for product 2");
+        assertEquals("Frozen", Nuts_condition_check.getText(), "Invalid condition for product");
     }
 
     // Strawberry button'a tıklanıyor, fiyat ve durum kontrol ediliyor.
@@ -76,11 +76,11 @@ public class TestPage extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement Strawberry_price = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath
                 ("//*[@id='root']/div/div/div/div[3]/div/table/tbody/tr[1]/td[4]")));
-        assertEquals("$1.49", Strawberry_price.getText(), "Invalid price for product 3");
+        assertEquals("$1.49", Strawberry_price.getText(), "Invalid price for product");
 
         WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement Strawberry_condition_check = wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath
                 ("//*[@id=\"root\"]/div/div/div/div[3]/div/table/tbody/tr[3]/td[2]")));
-        assertEquals("Frozen", Strawberry_condition_check.getText(), "Invalid colour for product 2");
+        assertEquals("Frozen", Strawberry_condition_check.getText(), "Invalid condition for product");
     }
 }
